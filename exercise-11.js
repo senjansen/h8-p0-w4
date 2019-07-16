@@ -19,7 +19,7 @@ function shoppingTime(memberId, money) {
         console.log('Mohon maaf, uang tidak cukup');
     } else {
         for (var i = 0; i < barang.harga.length; i++) {
-            if (money > barang.harga[i]) {
+            if (money >= barang.harga[i]) {
                 dataPelanggan.changeMoney -= barang.harga[i];
                 dataPelanggan.listPurchased.push(barang.namaBarang[i])
             }
